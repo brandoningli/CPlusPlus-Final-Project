@@ -4,7 +4,7 @@
 
 #We will take input from the user in Polish Notation
 #Numbers must start with a #
-#For simplicity, we will assume all input has two numbers before
+#For simplicity, we will assume all input has two numbers before any math operation
 
 #Variable for user response to "Another Equation?"
 
@@ -57,6 +57,8 @@ while cont == 'y' or cont == 'Y':
             b = stack.pop()
             #In python, you do exponents with the ** operator
             stack.append(b**a)
+        elif i[0] == '=':
+            break
     #After we go through all the terms, the answer is on the top of the stack
     print("The answer is " + str(stack.pop()))
 
@@ -65,3 +67,5 @@ while cont == 'y' or cont == 'Y':
 
     #For our loop, cont needs to be the first character of that input
     cont = ipt2[0]
+
+    stack.clear()

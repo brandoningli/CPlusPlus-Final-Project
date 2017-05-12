@@ -4,7 +4,7 @@
 
 #We will take input from the user in Polish Notation
 #Numbers must start with a #
-#For simplicity, we will assume all input has two numbers before
+#For simplicity, we will assume all input has two numbers before any math operation
 
 #To get file input, we need to import it
 import fileinput
