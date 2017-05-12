@@ -116,4 +116,7 @@ def play():
         print("It's a Tie!")
 
 
-
+initializeDeck()
+shuffle()
+deal()
+play()
