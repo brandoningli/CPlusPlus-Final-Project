@@ -1,8 +1,6 @@
 # Python Version of Dierker's Simplified War Program
 # For C++ Class Final Project Spring 2017
 
-#-------Begin Lesson-------
-
 # A few important things to note about Python:
 # Indention matters. There's no {} for anything except a specific data structure.
 # Use tab or two spaces, but keep it consistent
