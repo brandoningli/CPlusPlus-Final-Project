@@ -35,6 +35,14 @@ ipt = open("pig.ipt", mode='r')
 
 out = open("pig.out", mode='a')
 
+
+#To Read a file, there are multiple functions you can use:
+#   file.read() gets the entire file as a string
+#   file.read(5) gets the next 5 characters
+#   file.readline() gets the next line
+#   file.readlines() gets each line and returns a list of them
+#   for x in file:  will iterate through each line in the file (reference with x)
+
 #Now, let's loop through each line in the input file
 
 for line in ipt:
@@ -66,6 +74,7 @@ for line in ipt:
         translated += word + " "
 
     #write the phrase to the file
+    #It works just like printing to console, just with file.write()
     out.write(translated + '\n')
 
 #close the files
